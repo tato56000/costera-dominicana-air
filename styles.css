@@ -98,3 +98,19 @@
 @media(max-width:900px){.topbar-location{gap:7px}.topbar-weather #weather-desc{display:none}.topbar-clock{padding-left:8px}.header-premium .nav-wrap{gap:14px}.header-premium nav{gap:9px;font-size:9px}.header-premium .brand img{width:240px}}
 @media(max-width:760px){.topbar-inner{align-items:center;min-height:42px}.topbar-location{gap:7px}.topbar-location>span:nth-of-type(2),.topbar-location>i{display:none}.topbar-weather,.topbar-clock{padding-left:7px}.topbar-weather #weather-desc{display:none}.group-links .virtual-tag{display:none}.topbar{font-size:10px}.header-premium .nav-wrap{gap:12px}.header-premium .brand img{width:220px}.header-premium .nav-wrap{min-height:76px}}
 @media(max-width:430px){.topbar-location{gap:5px}.dom-flag{font-size:16px}.topbar-clock small{display:none}.topbar-clock{gap:4px}.topbar-weather{gap:4px}.topbar-weather>span:first-child{font-size:14px}.group-links{font-size:9px}.hero-premium .hero-grid{padding-bottom:0}}
+
+/* Fix: prevent legacy .coast scenic shape rules from clipping the photo card */
+.feature-card.photo-card.coast{position:relative;inset:auto;width:auto;height:270px;min-height:270px;clip-path:none;overflow:hidden;align-items:flex-end}
+.feature-cards{align-items:stretch;min-width:0}
+.feature-card.photo-card{height:270px;min-height:270px;width:100%;clip-path:none}
+.feature-card.photo-card img{z-index:-1;object-fit:cover;object-position:center}
+.feature-card.photo-card:after{z-index:0;pointer-events:none}
+.feature-card.photo-card>div{z-index:1}
+.hero-aircraft-photo{transform:none;border-radius:0;background:transparent;box-shadow:none;overflow:hidden}
+.hero-aircraft-photo:after{background:linear-gradient(0deg,#03265380,transparent 35%)}
+.hero-aircraft-photo img{object-fit:cover;object-position:center 55%;border-radius:12px}
+.fleet-photo-feature{min-height:0;aspect-ratio:16/7}
+.fleet-photo-feature>img{object-fit:cover;object-position:center 58%}
+.aircraft-photo{width:calc(100% + 36px);height:180px;object-fit:cover;object-position:center 55%}
+@media(max-width:760px){.feature-card.photo-card,.feature-card.photo-card.coast{height:225px;min-height:225px}.hero-aircraft-photo{height:250px;margin:10px 0 80px}.fleet-photo-feature{aspect-ratio:4/3}}
+@media(max-width:430px){.feature-card.photo-card,.feature-card.photo-card.coast{height:205px;min-height:205px}}
