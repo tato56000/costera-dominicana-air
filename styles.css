@@ -84,3 +84,17 @@
 @media(max-width:1100px){.header-premium .brand img{width:260px}.header-premium nav{gap:10px;font-size:10px}.header-premium nav .nav-join{padding:12px}.hero-premium .hero-grid{grid-template-columns:.8fr 1.2fr}.hero-aircraft-photo{height:330px}}
 @media(max-width:760px){.header-premium .nav-wrap{min-height:78px}.header-premium .brand img{width:230px;height:54px}.header-premium nav{font-size:12px}.header-premium nav .nav-join{margin:10px 0 0;justify-content:center}.hero-premium{min-height:0}.hero-premium .hero-grid{grid-template-columns:1fr;min-height:0}.hero-premium .hero-copy{padding:45px 0 20px}.hero-premium h1{font-size:clamp(43px,11vw,62px)}.hero-aircraft-photo{height:260px;margin:10px 0 80px;transform:none}.hero-dots{bottom:55px;right:20px}.hero-bottom-premium{grid-template-columns:1fr 1fr;margin-top:-35px;padding:8px}.hero-bottom-premium .bottom-item{padding:10px 8px;border-bottom:1px solid #e2ebf3}.hero-bottom-premium .bottom-item:nth-child(2n){border-right:0}.hero-bottom-premium .bottom-item:last-child{grid-column:1/-1;border-bottom:0}.hero-bottom-premium .round-icon{width:36px;height:36px}.hero-bottom-premium .bottom-item b{font-size:11px}.hero-bottom-premium .bottom-item small{font-size:9px}.intro{padding-top:58px}.feature-card.photo-card{height:225px;min-height:225px}.operations-preview-inner{align-items:flex-start;gap:14px;flex-wrap:wrap}.operations-icon{width:46px;height:46px;font-size:24px}.operations-preview-inner>div{flex:1;min-width:200px}.coming-soon{margin-left:60px}}
 @media(max-width:430px){.topbar-location span:first-of-type,.topbar-location i{display:none}.group-links{gap:8px}.virtual-tag{display:none}.hero-premium .hero-copy{padding-top:35px}.hero-actions .btn{font-size:10px;padding:0 14px}.hero-aircraft-photo{height:215px}.hero-script{font-size:19px}.hero-bottom-premium .round-icon{display:none}.hero-bottom-premium .bottom-item{gap:6px}}
+
+/* Live Santo Domingo clock and current weather in the utility bar */
+.topbar-inner{gap:12px}
+.topbar-location{display:flex;align-items:center;gap:10px;min-width:0;flex-wrap:wrap}
+.dom-flag{font-size:18px;line-height:1}
+.topbar-weather,.topbar-clock{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding-left:12px;border-left:1px solid #ffffff35}
+.topbar-weather strong,.topbar-clock strong{font-weight:750;color:#fff}
+.topbar-weather>span:first-child,.topbar-clock>span:first-child{font-size:17px}
+.topbar-weather #weather-desc{color:#bcd6ed;font-size:10px}
+.topbar-clock small{font-size:9px;color:#8ddff4;letter-spacing:.1em}
+.hero-bottom-premium .bottom-item{position:relative}
+@media(max-width:900px){.topbar-location{gap:7px}.topbar-weather #weather-desc{display:none}.topbar-clock{padding-left:8px}.header-premium .nav-wrap{gap:14px}.header-premium nav{gap:9px;font-size:9px}.header-premium .brand img{width:240px}}
+@media(max-width:760px){.topbar-inner{align-items:center;min-height:42px}.topbar-location{gap:7px}.topbar-location>span:nth-of-type(2),.topbar-location>i{display:none}.topbar-weather,.topbar-clock{padding-left:7px}.topbar-weather #weather-desc{display:none}.group-links .virtual-tag{display:none}.topbar{font-size:10px}.header-premium .nav-wrap{gap:12px}.header-premium .brand img{width:220px}.header-premium .nav-wrap{min-height:76px}}
+@media(max-width:430px){.topbar-location{gap:5px}.dom-flag{font-size:16px}.topbar-clock small{display:none}.topbar-clock{gap:4px}.topbar-weather{gap:4px}.topbar-weather>span:first-child{font-size:14px}.group-links{font-size:9px}.hero-premium .hero-grid{padding-bottom:0}}
