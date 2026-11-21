@@ -204,3 +204,26 @@
 .destinations-premium .disclaimer{margin-top:9px}
 @media(max-width:900px){.destination-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.destination-card:last-child{grid-column:1/-1;min-height:300px}.destinations-heading{grid-template-columns:1fr;gap:14px}}
 @media(max-width:560px){.dark-section .section{padding-top:58px;padding-bottom:58px}.destinations-heading h2{font-size:38px}.destination-grid{grid-template-columns:1fr;gap:13px;margin-top:25px}.destination-card,.destination-card:last-child{grid-column:auto;min-height:330px}.destination-card-content{padding:21px 19px}.destination-card h3{font-size:27px}.destinations-footer{align-items:flex-start;padding:14px}.destination-credits{font-size:8px}}
+
+/* Interactive-style static route map with destination photo markers */
+.route-map-shell{position:relative;margin:34px 0 30px;padding:14px;border:1px solid #7fdff044;border-radius:22px;background:linear-gradient(145deg,#0b3963,#041d3c);box-shadow:0 24px 55px #00132955;overflow:hidden}
+.route-map-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:5px 8px 14px;color:#e5f8ff;font-size:10px;font-weight:850;letter-spacing:.14em}
+.route-map-heading>div{display:flex;align-items:center;gap:9px}
+.route-map-heading>span{color:#a8cfe1;font-size:10px;font-weight:600;letter-spacing:.02em}
+.map-live-dot{width:8px;height:8px;border-radius:50%;background:#23d5e9;box-shadow:0 0 0 5px #23d5e922,0 0 14px #23d5e9}
+.route-map-scroll{width:100%;overflow-x:auto;overflow-y:hidden;border-radius:15px;scrollbar-color:#2e9bb9 #08294a;scrollbar-width:thin}
+.caribbean-route-map{display:block;width:100%;height:auto;min-width:720px;border-radius:15px}
+.caribbean-route-map text{font-family:inherit;fill:#eafaff;font-size:11px;font-weight:850;letter-spacing:1px;paint-order:stroke;stroke:#052442;stroke-width:2px;stroke-linejoin:round}
+.caribbean-route-map .map-island-labels text{font-size:10px;font-weight:700;letter-spacing:2px;stroke:none;fill:#b7dce9}
+.caribbean-route-map .route-lines path{stroke-dasharray:7 8;animation:routeFlow 22s linear infinite;filter:drop-shadow(0 0 5px #1bd5f0aa)}
+.caribbean-route-map .map-photo-pin image{filter:saturate(1.12)}
+.caribbean-route-map .map-hub image{filter:saturate(1.18) brightness(1.05)}
+.caribbean-route-map .map-legend text{font-size:9px;letter-spacing:.8px}
+.route-map-caption{display:flex;align-items:center;gap:12px;padding:14px 8px 3px;color:#c5e6f3}
+.route-map-caption>span:first-child{display:grid;place-items:center;flex:0 0 36px;height:36px;border-radius:11px;background:#11c5e7;color:#03264b;font-size:19px}
+.route-map-caption p{margin:0;font-size:11px;line-height:1.55}
+.route-map-caption strong{color:#fff}
+.route-map-count{margin-left:auto;white-space:nowrap;color:#8cecff;font-size:9px;font-weight:900;letter-spacing:.12em}
+@keyframes routeFlow{to{stroke-dashoffset:-240}}
+@media(max-width:560px){.route-map-shell{margin:24px -5px;padding:9px;border-radius:16px}.route-map-heading{align-items:flex-start;flex-direction:column;gap:6px;padding:5px 5px 11px}.caribbean-route-map{min-width:680px}.route-map-caption{align-items:flex-start;flex-wrap:wrap;padding:12px 5px 3px}.route-map-caption p{flex:1;min-width:190px}.route-map-count{margin-left:48px}}
+@media(prefers-reduced-motion:reduce){.caribbean-route-map .route-lines path{animation:none}}
